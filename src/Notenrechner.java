@@ -8,6 +8,9 @@ public class Notenrechner {
         while (run) {
             Scanner scanner = new Scanner(System.in);
 
+            System.out.println("WAS WOTSCH FÜR E NOTE BRATAN?");
+            double wunschnote = scanner.nextDouble();
+
             System.out.println("Was hast du bei der Gruppenarbeit?");
             double noteGruppe = scanner.nextDouble();
 
@@ -20,7 +23,7 @@ public class Notenrechner {
             }
 
 
-            double benötigt = (4 - (noteGruppe * 0.3 + noteHausaufgaben * 0.3)) / 0.4;
+            double benötigt = (wunschnote - (noteGruppe * 0.3 + noteHausaufgaben * 0.3)) / 0.4;
 
             System.out.printf("Du benötigst mind. ein %.2f du NOOB \n\n",benötigt);
         }
